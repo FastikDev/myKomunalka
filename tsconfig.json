@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "lib": ["dom", "dom.iterable", "esnext"],
+      "allowJs": true,
+      "skipLibCheck": true,
+      "strict": false,
+      "forceConsistentCasingInFileNames": true,
+      "noEmit": true,
+      "esModuleInterop": true,
+      "module": "esnext",
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "jsx": "preserve",
+      "baseUrl": ".",
+      "incremental": true,
+      "paths": {
+        "@mui/styled-engine": ["./node_modules/@mui/styled-engine-sc"], // this mapping is relative to "baseUrl"
+        "@components/*": ["src/components/*"],
+        "@services/*": ["src/services/*"],
+        "@features/*": ["src/features/*"],
+        "@layouts/*": ["src/layouts/*"],
+        "@entities/*": ["src/entities/*"],
+        "@enums/*": ["src/enums/*"],
+        "@gateways/*": ["src/gateways/*"],
+        "@common/*": ["src/common/*"],
+        "@hooks/*": ["src/hooks/*"],
+        "@admin/*": ["src/admin/*"],
+        "@theme/*": ["src/theme/*"],
+        "@theme": ["src/theme"]
+      }
+    },
+    "exclude": ["node_modules", ".next", "out"],
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js"]
+  }
